@@ -1,0 +1,48 @@
+{
+	"version": 2,
+	"settings": {
+		"appearanceTools": true,
+		"color": {
+			"palette": [
+				{
+					"slug": "primary",
+					"color": "var(--wh-primary)",
+					"name": "Primary"
+				},
+				{
+					"slug": "secondary",
+					"color": "var(--wh-secondary)",
+					"name": "Secondary"
+				},
+				{
+					"slug": "accent",
+					"color": "var(--wh-accent)",
+					"name": "Accent"
+				},
+				{
+					"slug": "background",
+					"color": "var(--wh-background)",
+					"name": "Background"
+				},
+				{
+					"slug": "surface",
+					"color": "var(--wh-surface)",
+					"name": "Surface"
+				}
+			]
+		},
+		"layout": {
+			"contentSize": "var(--wh-content-max)",
+			"wideSize": "var(--wh-container-max)"
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFamily": "var(--wh-font-sans)",
+					"name": "Sans",
+					"slug": "sans"
+				}
+			]
+		}
+	}
+}
