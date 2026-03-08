@@ -1,7 +1,0 @@
-- You are a senior WordPress architect. Build a clean, professional monolithic theme.
-- All logic must be modularized inside the 'inc/' folder. Do not bloat functions.php.
-- Always use the 'wh_' prefix for all PHP code.
-- Rule: Documentation in DOCS.md must follow standard requirements: Header, Hooks list, CSS Variables, and Usage snippets.
-- After completing any task, you MUST update PROJECT_PLAN.MD by marking the task as completed [x].
-- Never hardcode colors or spacing; always use CSS variables injected in wp_head.
-- Ensure all WooCommerce templates are correctly overridden in the 'woocommerce/' directory of the theme.

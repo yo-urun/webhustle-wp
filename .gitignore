@@ -1,34 +1,11 @@
-# WordPress
-wp-config.php
-wp-content/uploads/
-wp-content/upgrade/
-wp-content/backup-db/
-wp-content/cache/
-wp-content/languages/
-wp-content/plugins/
-wp-content/mu-plugins/
-wp-content/themes/twentytwentyfour/
-wp-content/themes/twentytwentyfive/
-wp-content/themes/twentytwentytree/
-wp-content/themes/twentytwentytwo/
-wp-content/themes/twentytwentyone/
-wp-content/themes/twentytwenty/
+# Ignore everything by default
+/*
+!/web-hustle/
+!/README.md
+!/.gitignore
 
-# OS files
-.DS_Store
-Thumbs.db
-
-# IDEs
-.vscode/
-.idea/
-*.code-workspace
-
-# Logs
-*.log
-
-# Environment
-.env
-
-# Project specific
-importwoo.csv
-importwoo.txt
+# Standard WordPress theme ignores inside the theme folder
+web-hustle/node_modules/
+web-hustle/.DS_Store
+web-hustle/Thumbs.db
+web-hustle/*.log
