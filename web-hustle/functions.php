@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Define Constants
  */
-define( 'WH_THEME_VERSION', '1.0.0' );
+define( 'WH_THEME_VERSION', '1.1.0' );
 define( 'WH_THEME_DIR', get_template_directory() );
 define( 'WH_THEME_URI', get_template_directory_uri() );
 

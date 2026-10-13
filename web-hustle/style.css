@@ -1,9 +1,14 @@
 /*
 Theme Name: Web Hustle
-Theme URI: https://github.com/web-hustle
-Description: A clean, professional monolithic WordPress theme built with Tailwind CSS and Alpine.js.
-Author: Web Hustle Team
-Version: 1.0.0
+Theme URI: https://github.com/yo-urun/webhustle-wp
+Description: A clean, professional monolithic WordPress + WooCommerce (block-ready / hybrid) theme built with UnoCSS and Alpine.js.
+Author: Take the Space
+Author URI: https://takethe.space
+Version: 1.1.0
+Requires at least: 6.0
+Requires PHP: 7.4
+License: MIT
+License URI: https://opensource.org/licenses/MIT
 Text Domain: web-hustle
 */
 

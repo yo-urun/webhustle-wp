@@ -3,9 +3,13 @@
 !/web-hustle/
 !/README.md
 !/.gitignore
+!/package.json
+!/package-lock.json
+!/uno.config.ts
 
 # Standard WordPress theme ignores inside the theme folder
 web-hustle/node_modules/
 web-hustle/.DS_Store
 web-hustle/Thumbs.db
 web-hustle/*.log
+node_modules/

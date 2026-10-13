@@ -15,21 +15,19 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @return string
  */
 function wh_google_fonts_url() {
-	$fonts_url = '';
-	$font_families = array();
-
-	// Modern default: Inter and Plus Jakarta Sans.
+	$font_families   = array();
 	$font_families[] = 'Inter:wght@400;500;600;700';
 	$font_families[] = 'Plus+Jakarta+Sans:wght@400;500;600;700';
 
-	$query_args = array(
-		'family'  => implode( '|', $font_families ),
-		'display' => 'swap',
+	return esc_url_raw(
+		add_query_arg(
+			array(
+				'family'  => implode( '|', $font_families ),
+				'display' => 'swap',
+			),
+			'https://fonts.googleapis.com/css2'
+		)
 	);
-
-	$fonts_url = add_query_arg( $query_args, 'https://fonts.googleapis.com/css2' );
-
-	return esc_url_raw( $fonts_url );
 }
 
 /**
@@ -44,11 +42,12 @@ function wh_enqueue_scripts() {
 	// Google Fonts.
 	wp_enqueue_style( 'wh-fonts', wh_google_fonts_url(), array(), null );
 
-	// Theme stylesheet.
+	// Theme stylesheet (theme header + WordPress/WooCommerce tweaks).
 	wp_enqueue_style( 'wh-style', get_stylesheet_uri(), array(), WH_THEME_VERSION );
 
-	// Tailwind CSS v4 via CDN.
-	wp_enqueue_script( 'wh-tailwind', 'https://cdn.tailwindcss.com/4', array(), '4.0.0', false );
+	// UnoCSS utilities, prebuilt from the templates (see `npm run css`).
+	// Replaces the old in-browser Tailwind CDN with a single static stylesheet.
+	wp_enqueue_style( 'wh-uno', WH_THEME_URI . '/assets/uno.css', array( 'wh-style' ), WH_THEME_VERSION );
 
 	// Alpine.js v3.x via CDN.
 	wp_enqueue_script( 'wh-alpine', 'https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js', array(), '3.x.x', true );
